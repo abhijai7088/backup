@@ -1,114 +1,126 @@
 .vehicle-panel {
-    
-    padding: 16px;
-    border-top: 1px solid #2d2d2d;
-    padding-bottom: 10px;
-    position: fixed;
-    bottom: 220px;
-    left: 350px;
-    
-    
-  }
+  padding: 16px;
   
-  .vehicle-categories {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 16px;
-  }
+  padding-bottom: 10px;
+  position: fixed;
+  bottom: 220px;
+  left: 330px;
+}
+
+.vehicle-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.vehicle-category {
+  padding: 6px 12px;
+  background-color: #2C394B;
+  border-radius: 6px;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  display: ruby-base-container;
+}
+
+.vehicle-list {
+  position: fixed;
+  bottom: 10px;
+  left: 329px;
+  right: 10px;
+  border-top: 1px solid #2d2d2d;
+  padding: 8px;
+  overflow-x: auto;
+  display: flex;
+  gap: 12px;
+  z-index: 50;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.vehicle-item {
+  flex-shrink: 0;
+  width: 150px;
+  height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: white;
+  font-size: 8px;
+  font-weight: 500;
+}
+
+.availability {
+  padding: 6px 8px;
+  font-weight: 600;
+  color: black;
+}
+
+.available {
+  background-color: #86efac;
+}
+
+.unavailable {
+  background-color: #fed7aa;
+}
+
+.vehicle-content {
+  padding: 1px;
+  display: flex;
+  flex-direction: column;
+  column-gap: 0px;
+}
+
+.vehicle-header {
+  display: flex;
   
-  .vehicle-category {
-    padding: 6px 12px;
-    background-color: #2C394B;
-    border-radius: 6px;
-    color: white;
-    font-size: 12px;
-    font-weight: 600;
-    display: ruby-base-container;
-  }
-  
-  .vehicle-list {
-    position: fixed;
-    bottom: 10px;
-    left: 360px;
-    right: 0;
-    
-    border-top: 1px solid #2d2d2d;
-    padding: 8px;
-    overflow-x: auto;
-    display: flex;
-    gap: 12px;
-    z-index: 50;
-    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.3);
-  }
-  
-  .vehicle-item {
-    left:350px;
-    flex-shrink: 0;
-    width: 130px; /* 52 x 4 */
-    height: 200px; /* 64 x 4 */
-    border: 1px solid #ccc;
-    border-radius: 1px;
-    overflow: hidden;
-    background-color: white;
-    
-    font-size: 8px;
-    font-weight: 500;
-  }
-  
-  .availability {
-    padding: 6px 8px;
-    font-weight: 600;
-    color: black;
-  }
-  
-  .available {
-    background-color: #86efac;
-  }
-  
-  .unavailable {
-    background-color: #fed7aa;
-  }
-  
-  .vehicle-content {
-    padding: 8px;
-  }
-  
-  .vehicle-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .vehicle-type {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    max-width: 170px;
-  }
-  
-  .warning-signal {
-    width: 10px;
-    height: 10px;
-    background-color: #fb923c;
-    border-radius: 50%;
-    display: inline-block;
-  }
-  
-  .vehicle-details {
-    font-size: 10px;
-    margin-top: 8px;
-  }
-  
-  .label {
-    color: gray;
-  }
-  
-  .vehicle-image {
-    width: 100%;
-    height: 96px;
-    object-fit: contain;
-    border-top: 1px solid #ccc;
-    background-color: white;
-  }
-  
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vehicle-type {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 170px;
+  font-weight: bold;
+  font-size: 10px;
+  color: #1e1e1e;
+}
+
+.warning-signal {
+  width: 10px;
+  height: 10px;
+  background-color: #fb923c;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.vehicle-details {
+  font-size: 12px;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: -1px;
+}
+
+.vehicle-details div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: black; /* This sets label and value text color to black */
+}
+
+.label {
+  font-size: 10px;
+  font-weight: 500;
+  color: black !important; /* Explicitly ensure labels are black */
+}
+
+.vehicle-image {
+  width: 100%;
+  height: 93px;
+  object-fit: contain;
+  border-top: 1px solid #ccc;
+  background-color: white;
+}
