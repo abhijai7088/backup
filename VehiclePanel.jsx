@@ -37,7 +37,7 @@ const VehicleItem = ({
   );
 };
 const VehiclePanel = () => {
-  const VISIBLE_COUNT = 9;
+  const VISIBLE_COUNT = 7;
   const [showMore, setShowMore] = useState(false);
 
 
